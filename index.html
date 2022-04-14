@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Wirtualny spacer po XLO</title>
+<meta charset="utf-8">
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<style> @-ms-viewport { width: device-width; } </style>
+<link rel="stylesheet" href="vendor/reset.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="multiple-scenes ">
+
+<div id="pano"></div>
+
+<div id="sceneList">
+  <ul class="scenes">
+    
+      <a href="javascript:void(0)" class="scene" data-id="0-xlo-z-lotu-ptaka">
+        <li class="text">XLO z lotu ptaka</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="1-cznik">
+        <li class="text">Łącznik</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="2-budynek-a-wejcie">
+        <li class="text">Budynek A: wejście</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="3-budynek-a-parter">
+        <li class="text">Budynek A: parter</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="4-budynek-a-1-pitro">
+        <li class="text">Budynek A: 1. piętro</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="5-budynek-a-2-pitro">
+        <li class="text">Budynek A: 2. piętro</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="6-budynek-a-biblioteka">
+        <li class="text">Budynek A: biblioteka</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="7-budynek-a-informatyka">
+        <li class="text">Budynek A: informatyka</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="8-budynek-b-wejcie">
+        <li class="text">Budynek B: wejście</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="9-budynek-b-parter">
+        <li class="text">Budynek B: parter</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="10-budynek-b-1-pitro">
+        <li class="text">Budynek B: 1. piętro</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="11-budynek-b-chemia">
+        <li class="text">Budynek B: chemia</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="12-budynek-b-2-pitro">
+        <li class="text">Budynek B: 2. piętro</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="13-budynek-b-geografia">
+        <li class="text">Budynek B: geografia</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="14-budynek-wf-wejcie">
+        <li class="text">Budynek WF: wejście</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="15-budynek-wf-hol">
+        <li class="text">Budynek WF: hol</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="16-budynek-wf-hala">
+        <li class="text">Budynek WF: hala</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="17-budynek-wf-sala-judo">
+        <li class="text">Budynek WF: sala judo</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="18-budynek-wf-siownia">
+        <li class="text">Budynek WF: siłownia</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="19-ra-wiatrw-hol">
+        <li class="text">Róża Wiatrów: hol</li>
+      </a>
+    
+      <a href="javascript:void(0)" class="scene" data-id="20-ra-wiatrw-sala">
+        <li class="text">Róża Wiatrów: sala</li>
+      </a>
+    
+  </ul>
+</div>
+
+<div id="titleBar">
+  <h1 class="sceneName"></h1>
+</div>
+
+<a href="javascript:void(0)" id="autorotateToggle">
+  <img class="icon off" src="img/play.png">
+  <img class="icon on" src="img/pause.png">
+</a>
+
+<a href="javascript:void(0)" id="fullscreenToggle">
+  <img class="icon off" src="img/fullscreen.png">
+  <img class="icon on" src="img/windowed.png">
+</a>
+
+<a href="javascript:void(0)" id="sceneListToggle">
+  <img class="icon off" src="img/expand.png">
+  <img class="icon on" src="img/collapse.png">
+</a>
+
+<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
+  <img class="icon" src="img/up.png">
+</a>
+<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
+  <img class="icon" src="img/down.png">
+</a>
+<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
+  <img class="icon" src="img/left.png">
+</a>
+<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
+  <img class="icon" src="img/right.png">
+</a>
+<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
+  <img class="icon" src="img/plus.png">
+</a>
+<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
+  <img class="icon" src="img/minus.png">
+</a>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+</body>
+</html>
